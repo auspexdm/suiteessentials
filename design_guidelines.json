@@ -1,0 +1,118 @@
+{
+  "theme": "dark",
+  "archetype": "5 (Jewel & Luxury)",
+  "design_philosophy": {
+    "identity": "Suite Essentials - High-end, premium wholesale B2B hotel supplies.",
+    "emotion": "Luxurious, reliable, warm, established, elegant.",
+    "core_principles": [
+      "Use heavy negative space (generous padding) to create a premium feel.",
+      "Asymmetric bento grids for visual tension in product categories.",
+      "Cinematic lighting and dark theme with warm taupe and bronze accents.",
+      "Typography is the primary decorative element; avoid unnecessary graphics."
+    ]
+  },
+  "colors": {
+    "background": {
+      "base": "#0A0A0A",
+      "surface": "#1A1617",
+      "surface_elevated": "#251F21"
+    },
+    "brand": {
+      "primary": "#5A4A4E",
+      "primary_hover": "#705E63",
+      "accent_gold": "#8C7A6B",
+      "accent_olive": "#4A4D3E"
+    },
+    "text": {
+      "primary": "#F5F2F0",
+      "secondary": "#B8B0AA",
+      "muted": "#8A817C"
+    },
+    "borders": {
+      "subtle": "rgba(90, 74, 78, 0.3)",
+      "focus": "#8C7A6B"
+    }
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Playfair Display, serif",
+      "weights": ["400", "600"],
+      "usage": "Use for all H1, H2, H3. Apply tracking-tight for large headings."
+    },
+    "body": {
+      "font_family": "Outfit, sans-serif",
+      "weights": ["300", "400", "500"],
+      "usage": "Use for paragraphs, buttons, navigation, and labels. Apply tracking-wide for overlines."
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter leading-none",
+      "h2": "text-3xl sm:text-4xl tracking-tight",
+      "h3": "text-2xl sm:text-3xl",
+      "body": "text-base sm:text-lg leading-relaxed text-[#B8B0AA]",
+      "overline": "text-xs tracking-[0.2em] uppercase text-[#8C7A6B]"
+    }
+  },
+  "layout_spacing": {
+    "container": "max-w-7xl mx-auto px-6 sm:px-8 lg:px-12",
+    "section_gap": "py-24 sm:py-32",
+    "bento_grid": {
+      "class": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6",
+      "description": "Use the Tetris Grid mode. Mix col-span-4, col-span-8, and row-spans to create an asymmetric, artful presentation of the 7 product categories."
+    },
+    "surfaces": {
+      "card": "bg-[#1A1617] border border-[#5A4A4E]/30 rounded-none p-8 transition-colors duration-300 hover:border-[#8C7A6B]/50",
+      "header_glass": "bg-[#0A0A0A]/70 backdrop-blur-xl border-b border-[#5A4A4E]/30"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#5A4A4E] text-[#F5F2F0] hover:bg-[#705E63] px-8 py-4 rounded-none transition-all duration-300 font-medium tracking-wide",
+      "secondary": "bg-transparent text-[#F5F2F0] border border-[#5A4A4E] hover:border-[#8C7A6B] hover:bg-[#1A1617] px-8 py-4 rounded-none transition-all duration-300 font-medium tracking-wide"
+    },
+    "forms": {
+      "input": "bg-[#1A1617] border border-[#5A4A4E]/50 focus:border-[#8C7A6B] focus:ring-1 focus:ring-[#8C7A6B] rounded-none text-[#F5F2F0] p-4 w-full placeholder-[#8A817C] transition-colors",
+      "label": "text-sm text-[#B8B0AA] mb-2 block font-medium"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "Always use strokeWidth={1} for an elegant, delicate appearance."
+    }
+  },
+  "media": {
+    "logo": {
+      "main": "https://customer-assets.emergentagent.com/job_suite-essentials-hub/artifacts/518jzztr_2.png",
+      "description": "Suite Essentials logo with SE monogram and botanical leaf elements."
+    },
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1765745518673-b562b7304a53?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBkYXJrJTIwbWFyYmxlfGVufDB8fHx8MTc3NTcyODg3M3ww&ixlib=rb-4.1.0&q=85",
+      "categories": {
+        "guest_room": "https://images.unsplash.com/photo-1774175927628-40e82ee8fe13?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBob3RlbCUyMHJvb20lMjBpbnRlcmlvciUyMGRhcmt8ZW58MHx8fHwxNzc1NzI4ODY0fDA&ixlib=rb-4.1.0&q=85",
+        "housekeeping": "https://images.pexels.com/photos/9462745/pexels-photo-9462745.jpeg",
+        "kitchen": "https://images.unsplash.com/photo-1755300880638-76b7a3027e1a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHw0fHxyZXN0YXVyYW50JTIwa2l0Y2hlbiUyMHN0YWZmfGVufDB8fHx8MTc3NTcyODg3M3ww&ixlib=rb-4.1.0&q=85",
+        "front_office": "https://images.unsplash.com/photo-1759038085950-1234ca8f5fed?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxob3RlbCUyMGxvYmJ5JTIwZGVza3xlbnwwfHx8fDE3NzU3Mjg4ODB8MA&ixlib=rb-4.1.0&q=85",
+        "safety": "https://images.pexels.com/photos/11285437/pexels-photo-11285437.png",
+        "outdoor": "https://images.unsplash.com/photo-1678913308053-316cee77afe9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBob3RlbCUyMHBvb2x8ZW58MHx8fHwxNzc1NzI4ODgwfDA&ixlib=rb-4.1.0&q=85",
+        "consumables": "https://images.unsplash.com/photo-1750271336429-8b0a507785c0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHwxfHxob3RlbCUyMGFtZW5pdGllcyUyMHNvYXB8ZW58MHx8fHwxNzc1NzI4ODgwfDA&ixlib=rb-4.1.0&q=85"
+      },
+      "about_us": "https://images.unsplash.com/photo-1774921676536-12e96b39238c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxob3RlbCUyMGxvYmJ5JTIwZGVza3xlbnwwfHx8fDE3NzU3Mjg4ODB8MA&ixlib=rb-4.1.0&q=85",
+      "contact_bg": "https://images.pexels.com/photos/13722853/pexels-photo-13722853.jpeg"
+    },
+    "image_treatment": {
+      "hero_overlay": "bg-gradient-to-r from-[#0A0A0A]/90 via-[#0A0A0A]/60 to-transparent",
+      "card_overlay": "absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/80 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"
+    }
+  },
+  "testing": {
+    "attributes": "All interactive elements (buttons, links, form inputs) MUST include data-testid attributes formatted in kebab-case representing their role."
+  },
+  "instructions_to_main_agent": [
+    "Install and setup the required fonts: Playfair Display and Outfit via standard Google Fonts imports in index.css.",
+    "Do NOT use 'Inter' for headings. Playfair Display must be applied to all H1/H2/H3 elements.",
+    "Implement the 'Tetris' grid for the 'Featured Categories' on the Home page using the specified images.",
+    "Keep forms minimal and elegant. Do not use border-radius (rounded-none) to maintain the premium, high-end Swiss/Luxury aesthetic.",
+    "The Hero section must use the provided dark marble background image with a gradient overlay to ensure the text meets APCA contrast standards.",
+    "Use framer-motion for subtle fade-in-up animations when scrolling down the page. Stagger the bento grid items.",
+    "For the Contact Us form, implement it visually on the frontend using Shadcn UI principles but customized with our dark taupe styles. No backend is required, just UI.",
+    "Ensure the navigation header is sticky with glassmorphism over the hero section."
+  ]
+}
