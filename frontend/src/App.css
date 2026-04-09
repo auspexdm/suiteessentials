@@ -1,34 +1,97 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Suite Essentials - Custom Styles */
+
+.font-heading {
+  font-family: 'Playfair Display', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.font-body {
+  font-family: 'Outfit', sans-serif;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+/* Hero background image */
+.hero-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.App-link {
-    color: #61dafb;
+/* Glass morphism header */
+.glass-header {
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+/* Category card hover effect */
+.category-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #8C7A6B;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.category-card:hover::after {
+  transform: scaleX(1);
+}
+
+/* Subtle grain texture overlay */
+.grain-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Divider line */
+.divider-gold {
+  width: 60px;
+  height: 1px;
+  background: #8C7A6B;
+}
+
+/* Animate on scroll base */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Image zoom on hover */
+.img-zoom {
+  transition: transform 0.6s ease;
+}
+
+.img-zoom:hover {
+  transform: scale(1.05);
+}
+
+/* Smooth page transition */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
